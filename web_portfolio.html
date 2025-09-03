@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Your Name | Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="pot.css" />
+		<script type="module" src="pot.js" defer></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<nav class="navbar">
+					<a href="#" class="logo">pspepp3r</a>
+					<ul class="nav-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<div class="menu-toggle">
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1>Prosper&NonBreakingSpace;Pepple</h1>
+						<p>
+							An arsenal of <span>Ideas</span>, always ready to
+							<span>inspire!</span>
+						</p>
+						<a href="#contact" class="btn">Let's talk</a>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-github"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+					<div class="hero-image">
+						<!-- src="https://placehold.co/400x400/4a6cf7/FFFFFF?text=pspepp3r" -->
+						<img src="img/me.jpg" alt="Profile Photo" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="section">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="about-content">
+					<div class="about-image">
+						<img
+							src="https://placehold.co/600x400/4a6cf7/FFFFFF?text=About+Me"
+							alt="About Me"
+						/>
+					</div>
+					<div class="about-text">
+						<h3>Web Developer</h3>
+						<p>
+							Hello! I'm a young web developer enthusiastic about various kind
+							of web technologies ranging from APIs to beautiful web designs and
+							beyond.
+						</p>
+						<p>
+							I believe in SOLID code and well-planned architecture for optimal
+							scalability and functionality of web applications.
+						</p>
+						<ul class="info-list">
+							<li><strong>Name:</strong> Pepple Prosper Sodiari</li>
+							<li><strong>Email:</strong> prosperpepple12@gmail.com</li>
+							<li><strong>Age:</strong> <span id="age"></span></li>
+							<li><strong>From:</strong> Rivers, Nigeria</li>
+						</ul>
+						<a href="#" class="btn">Download CV</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section
+			id="skills"
+			class="section"
+			style="background: rgba(74, 108, 247, 0.05)"
+		>
+			<div class="container">
+				<h2 class="section-title">My Skills</h2>
+				<div class="skills-container">
+					<!-- Loading skills... -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="section">
+			<div class="container">
+				<h2 class="section-title">My Projects</h2>
+				<div class="projects-container">
+					<!--Loading Projects  -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section
+			id="contact"
+			class="section"
+			style="background: rgba(74, 108, 247, 0.05)"
+		>
+			<div class="container">
+				<h2 class="section-title">Contact Me</h2>
+				<div class="contact-container">
+					<div class="contact-info">
+						<div class="contact-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<div class="contact-details">
+								<h4>Location</h4>
+								<p>Uyo, Nigeria</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<div class="contact-details">
+								<h4>Email</h4>
+								<p>prosperpepple12@gmail.com</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<div class="contact-details">
+								<h4>Phone</h4>
+								<p>(+234) 813-8678-688</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form>
+							<div class="form-group">
+								<label for="name">Your Name</label>
+								<input type="text" id="name" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label for="email">Your Email</label>
+								<input type="email" id="email" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label for="subject">Subject</label>
+								<input type="text" id="subject" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" class="form-control" required></textarea>
+							</div>
+							<button type="submit" class="btn">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-column">
+						<h3>Portfolio</h3>
+						<p>
+							My Web developer portfolio website to showcase relevant skills and
+							projects.
+						</p>
+					</div>
+					<div class="footer-column">
+						<h3>Quick Links</h3>
+						<ul class="footer-links">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Follow Me</h3>
+						<ul class="footer-links">
+							<li>
+								<a href="https://github.com/pspepp3r"
+									><i class="fab fa-github"></i> GitHub</a
+								>
+							</li>
+							<li>
+								<a href="https://x.com/pspepp3r?s=08"
+									><i class="fab fa-twitter"></i> X (formerly Twitter)</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>&copy; <span id="year"></span> pspepp3r. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
