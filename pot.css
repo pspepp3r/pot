@@ -187,7 +187,7 @@ header {
 
 .hero-image img {
 	height: 400px;
-	width: 300px;
+	width: 400px;
 	max-width: 100%;
 	border-radius: 10%;
 	border: 5px solid white;
@@ -245,20 +245,6 @@ header {
 .about-text p {
 	margin-bottom: 15px;
 	color: var(--gray-color);
-}
-
-.info-list {
-	margin: 20px 0;
-}
-
-.info-list li {
-	margin-bottom: 10px;
-	display: flex;
-}
-
-.info-list strong {
-	min-width: 100px;
-	display: inline-block;
 }
 
 /* Skills Section */

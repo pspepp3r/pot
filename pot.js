@@ -25,10 +25,6 @@ contactForm.addEventListener("submit", (e) => {
     contactForm.reset();
 });
 
-// Calculate age
-document.querySelector("#age").innerHTML =
-    new Date().getFullYear() - 2005;
-
 // Dynamic year
 document.querySelector("#year").innerHTML = new Date().getFullYear();
 
@@ -46,28 +42,34 @@ skills.forEach(skill => {
 });
 
 // Load projects
-projects.forEach(project => {
+for (let i = 0; i < projects.length; i++) {
     document.querySelector(".projects-container").innerHTML += `
-    <div class="project-item" id="${project.id}">
+    <div class="project-item" id="${projects[i].id}">
         <div class="project-image">
             <img
-                src="${project.image}"
-                alt="Project 1"
+                src="${projects[i].image}"
+                alt="Project ${projects[i].id}"
             />
         </div>
         <div class="project-info">
-            <h3>${project.title}</h3>
+            <h3>${projects[i].title}</h3>
             <p>
-            ${project.desc}
+            ${projects[i].desc}
             </p>
             <div class="project-tags">
-            ${project.tools.forEach(tool => {
-        `<span>${tool}</span>`
-    })
-        }
             </div>
             <a href="#" class="btn">View Project</a>
         </div>
     </div>
-    `;
-})
+`
+}
+
+const projectTags = document.querySelectorAll(".project-tags");
+projectTags.forEach((projectTag, idx) => {
+    for (let i = 0; i < projects.length; i++) {
+        projects[idx].tools.forEach(tool => {
+            projectTag.innerHTML += `<span>${tool}</span>`
+        })
+        break;
+    }
+});
