@@ -43,12 +43,12 @@
 						</p>
 						<a href="#contact" class="btn">Connect with me</a>
 						<div class="social-links">
-							<a href="#"><i class="fab fa-github"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a target="_blank" href="https://www.github.com/pspepp3r"><i class="fab fa-github"></i></a>
+							<a target="_blank" href="https://www.x.com/pspepp3r"><i class="fab fa-twitter"></i></a>
+							<a target="_blank" href="https://www.facebook.com/pspepp3r.dev"><i class="fab fa-facebook"></i></a>
 						</div>
 					</div>
 					<div class="hero-image">
-						<!-- src="https://placehold.co/400x400/4a6cf7/FFFFFF?text=pspepp3r" -->
 						<img id="me" src="img/me.jpg" alt="Profile Photo" />
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 							I believe in SOLID code and well-planned architecture for optimal
 							scalability and functionality of web applications.
 						</p>
-						<a href="#" class="btn">Download CV</a>
+						<a href="data/cv.docx" download class="btn">Download CV</a>
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 						</div>
 					</div>
 					<div class="contact-form">
-						<form>
+						<form action="./script/form_handler.php" method="POST">
 							<div class="form-group">
 								<label for="name">Your Name</label>
 								<input type="text" id="name" class="form-control" required />
@@ -207,7 +207,7 @@
 					</div>
 				</div>
 				<div class="copyright">
-					<p>&copy; <span id="year"></span> pspepp3r. All Rights Reserved.</p>
+					<p>Last updated: <span id="year"></span></p>
 				</div>
 			</div>
 		</footer>
