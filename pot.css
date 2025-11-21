@@ -186,8 +186,8 @@ header {
 }
 
 .hero-image img {
-	height: 400px;
-	width: 400px;
+	height: 25em;
+	width: 25em;
 	max-width: 100%;
 	border-radius: 10%;
 	border: 5px solid white;
