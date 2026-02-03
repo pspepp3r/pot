@@ -59,7 +59,7 @@ for (let i = 0; i < projects.length; i++) {
             </p>
             <div class="project-tags">
             </div>
-            <a href="#" class="btn">View Project</a>
+            <a href="${projects[i].link}" class="btn">View Project</a>
         </div>
     </div>
 `

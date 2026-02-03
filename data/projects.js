@@ -1,26 +1,26 @@
 export default [
 	{
 		"id": 1,
-		"image": "https://placehold.co/600x400/4a6cf7/FFFFFF?text=Buyinit",
-		"title": "Buyinit",
-		"desc": "A fully functional e-commerce site with shopping cart and payment integration.",
-		"tools": ["Laravel", "React", "MariaDB"],
-		"link": "#"
+		"image": "./img/bongist-logo.svg",
+		"title": "Bongist",
+		"desc": "Contributed the financial features of the Bongist web application.",
+		"tools": ["PHP", "CSS", "Bootstrap", "Javascript"],
+		"link": "https://www.bongistkoncept.com"
 	},
 	{
 		"id": 2,
-		"image": "https://placehold.co/600x400/6f42c1/FFFFFF?text=Blogginit",
+		"image": "./img/blogginit-logo.png",
 		"title": "Blogginit",
 		"desc": "A responsive blogging platform with content management system for articles.",
 		"tools": ["SlimPHP", "Twig", "Bootstrap", "JavaScript"],
-		"link": "#"
+		"link": "https://www.github.com/pspepp3r/blogginit"
 	},
 	{
 		"id": 3,
 		"image": "https://placehold.co/600x400/1d2144/FFFFFF?text=Chattinit",
-		"title": "Chattinit",
-		"desc": "A web chatting application utilizing web socket technology.",
-		"tools": ["Laravel", "React", "MySQL"],
-		"link": "#"
+		"title": "BookBuzz",
+		"desc": "A RESTful social media API service.",
+		"tools": ["Laravel", "Sanctum", "MongoDB"],
+		"link": "https://www.github.com/pspepp3r/book-buzz"
 	}
 ];
