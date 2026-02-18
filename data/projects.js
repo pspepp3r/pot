@@ -22,5 +22,13 @@ export default [
 		"desc": "A RESTful social media API service.",
 		"tools": ["Laravel", "Sanctum", "MongoDB"],
 		"link": "https://www.github.com/pspepp3r/book-buzz"
+	},
+	{
+		"id": 3,
+		"image": "./img/php-json.jpg",
+		"title": "PHP-JSON",
+		"desc": "A PHP Library used to peform CRUD operations on JSON files.",
+		"tools": ["PHP", "PHPUnit"],
+		"link": "https://www.github.com/pspepp3r/php-json"
 	}
 ];
