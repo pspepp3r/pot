@@ -180,11 +180,6 @@ header {
 	color: var(--primary-color);
 }
 
-.hero-image {
-	flex: 1;
-	text-align: center;
-}
-
 .hero-image img {
 	height: 25em;
 	width: 25em;
@@ -530,6 +525,10 @@ footer {
 
 	.hero {
 		padding: 120px 0 80px;
+	}
+
+	.hero-image img {
+		height: 19em;
 	}
 
 	.hero-text h1 {
