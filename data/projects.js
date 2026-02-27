@@ -17,10 +17,10 @@ export default [
 	},
 	{
 		"id": 3,
-		"image": "https://placehold.co/600x400/1d2144/FFFFFF?text=Chattinit",
+		"image": "./img/book-buzz.jpg",
 		"title": "BookBuzz",
-		"desc": "A RESTful social media API service.",
-		"tools": ["Laravel", "Sanctum", "MongoDB"],
+		"desc": "",
+		"tools": ["Laravel", "React", "MongoDB"],
 		"link": "https://www.github.com/pspepp3r/book-buzz"
 	},
 	{
