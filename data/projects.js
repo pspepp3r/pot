@@ -5,7 +5,7 @@ export default [
 		"title": "Bongist",
 		"desc": "Contributed the financial features of the Bongist web application.",
 		"tools": ["PHP", "CSS", "Bootstrap", "Javascript"],
-		"link": "https://www.bongistkoncept.com"
+		"link": "https://www.bongistkoncepts.com"
 	},
 	{
 		"id": 2,
