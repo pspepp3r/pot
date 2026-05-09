@@ -16,13 +16,47 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     });
 });
 
+// Header scroll effect
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+// Scroll Reveal Animation
+const revealElements = () => {
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+};
+
 // Form submission
 const contactForm = document.querySelector(".contact-form form");
 
 contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    alert("Thank you for your message! I will get back to you soon.");
-    contactForm.submit();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:prosperpepple12@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+
+    window.location.href = mailtoLink;
+
     contactForm.reset();
 });
 
@@ -30,47 +64,38 @@ contactForm.addEventListener("submit", (e) => {
 document.querySelector("#year").innerHTML = new Date().getFullYear();
 
 // Load skills
+const skillsContainer = document.querySelector(".skills-container");
 skills.forEach(skill => {
-    document.querySelector(".skills-container").innerHTML += `
-    <div class="skill-item" id="${skill.id}">
-        <!-- <i class="${skill.icon}"></i> -->
+    skillsContainer.innerHTML += `
+    <div class="skill-item reveal" id="${skill.id}">
         <h3>${skill.title}</h3>
         <progress value="${skill.mastery}" max="100"></progress>
-        <p>
-        ${skill.desc}
-        </p>
+        <p>${skill.desc}</p>
     </div> `;
 });
 
 // Load projects
-for (let i = 0; i < projects.length; i++) {
-    document.querySelector(".projects-container").innerHTML += `
-    <div class="project-item" id="${projects[i].id}">
+const projectsContainer = document.querySelector(".projects-container");
+projects.forEach(project => {
+    projectsContainer.innerHTML += `
+    <div class="project-item reveal" id="${project.id}">
         <div class="project-image">
             <img
-                src="${projects[i].image}"
-                alt="Project ${projects[i].id}"
+                src="${project.image || 'https://placehold.co/600x400/4a6cf7/FFFFFF?text=' + project.title}"
+                alt="${project.title}"
             />
         </div>
         <div class="project-info">
-            <h3>${projects[i].title}</h3>
-            <p>
-            ${projects[i].desc}
-            </p>
-            <div class="project-tags">
+            <h3>${project.title}</h3>
+            <p>${project.desc}</p>
+            <div class="project-tags" id="tags-${project.id}">
+                ${project.tools.map(tool => `<span>${tool}</span>`).join('')}
             </div>
-            <a href="${projects[i].link}" class="btn">View Project</a>
+            <a target="_blank" href="${project.link}" class="btn">View Project</a>
         </div>
     </div>
-`
-}
-
-const projectTags = document.querySelectorAll(".project-tags");
-projectTags.forEach((projectTag, idx) => {
-    for (let i = 0; i < projects.length; i++) {
-        projects[idx].tools.forEach(tool => {
-            projectTag.innerHTML += `<span>${tool}</span>`
-        })
-        break;
-    }
+`;
 });
+
+// Initialize reveal
+revealElements();
